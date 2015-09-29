@@ -59,6 +59,17 @@ Make sure to "Enable OAuth" and to copy the two values produced. You'll need the
 
 <img src="./images/ST3.png" />
 
+## Add Custom Device Type Handler (optional to control contact sensor)
+* Add new Device Type Handler 
+* Choose from template
+* Select Simulated Contact Sensor
+* Edit anything you want
+
+## Add Virtual Device (optional to control contact sensor)
+* Add a new device and make sure its capabilites are linked to the device type you just made above
+* You can now control the contact sensor as you would if it were a switch
+
+
 ## Authorize
 
 To access the API key, you need an <code>access\_token</code>. 
@@ -108,6 +119,10 @@ your SmartThings phone app.
 #### Toggle a switch
 
     $ python smartthings.py --type switch --id "My Z-Wave Switch" --request switch=-1
+    
+#### Turn off a contact (must use custom device handler)  
+
+    $ python smartthings.py --type contact --id "My Z-Wave Switch" --request contact=0
 
 ### Node
 
