@@ -122,7 +122,7 @@ your SmartThings phone app.
     
 #### Turn off a contact (must use custom device handler)  
 
-    $ python smartthings.py --type contact --id "My Z-Wave Switch" --request contact=0
+    $ python smartthings.py --type contact --id "My Z-Wave Contact" --request contact=0
 
 ### Node
 
